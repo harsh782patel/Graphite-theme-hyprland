@@ -1,0 +1,27 @@
+scheme: "GraphiteDark"
+author: "KDE"
+description: "Dark graphite color scheme"
+base00: "2c2c2c"  # Default Background - [Colors:Window] BackgroundNormal
+base01: "303030"  # Lighter Background - [Colors:View] BackgroundAlternate
+base02: "333333"  # Selection Background - [Colors:Header] BackgroundAlternate
+base03: "474747"  # Comments, Invisibles - [Colors:Button] BackgroundNormal
+base04: "505050"  # Dark Foreground - [Colors:Button] BackgroundAlternate
+base05: "dfdfdf"  # Default Foreground - [Colors:Window] ForegroundNormal
+base06: "e0e0e0"  # Light Foreground - [Colors:Button] DecorationHover
+base07: "f2f2f2"  # Light Background - [Colors:Complementary] ForegroundActive
+base08: "da4453"  # Variables, XML Tags - [Colors:Window] ForegroundNegative
+base09: "ff6d00"  # Integers, Boolean - [Colors:Window] ForegroundNeutral
+base0A: "00bcd4"  # Classes, Markup Bold - [Colors:Window] ForegroundVisited
+base0B: "01a299"  # Strings, Inherited Class - [Colors:Window] ForegroundPositive
+base0C: "39c2fd"  # Support, Regular Expressions - [Colors:Selection] ForegroundLink
+base0D: "4285f4"  # Functions, Methods - [Colors:Window] ForegroundLink
+base0E: "888888"  # Keywords, Storage - [Colors:Selection] ForegroundVisited
+base0F: "969696"  # Deprecated - [ColorEffects:Disabled] Color
+
+# wallpaper color pallete
+base0G: "262626"
+base0H: "383838" 
+base0I: "333333"
+base0J: "474747"
+base0K: "404040"
+base0L: "525252"
