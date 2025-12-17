@@ -1,0 +1,120 @@
+format = """
+[](#2c2c2c)\
+$python\
+$username\
+[](bg:#404040 fg:#2c2c2c)\
+$directory\
+[](fg:#404040 bg:#525252)\
+$git_branch\
+$git_status\
+[](fg:#525252 bg:#404040)\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+[](fg:#404040 bg:#333333)\
+$docker_context\
+[](fg:#333333 bg:#2c2c2c)\
+$time\
+[ ](fg:#2c2c2c)\
+"""
+command_timeout = 5000
+
+[username]
+show_always = true
+style_user = "bg:#2c2c2c fg:#dfdfdf"
+style_root = "bg:#2c2c2c fg:#dfdfdf"
+format = "[$user ]($style)"
+
+[directory]
+style = "bg:#404040 fg:#dfdfdf"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+# LANGUAGE BLOCKS — now grayscale
+[c]
+symbol = " "
+style = "bg:#525252 fg:#dfdfdf"
+format = "[ $symbol ($version) ]($style)"
+
+[docker_context]
+symbol = " "
+style = "bg:#333333 fg:#dfdfdf"
+format = "[ $symbol $context ]($style)$path"
+
+[elixir]
+symbol = " "
+style = "bg:#525252 fg:#dfdfdf"
+format = "[ $symbol ($version) ]($style)"
+
+[elm]
+symbol = " "
+style = "bg:#525252 fg:#dfdfdf"
+format = "[ $symbol ($version) ]($style)"
+
+[git_branch]
+symbol = ""
+style = "bg:#525252 fg:#dfdfdf"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bg:#525252 fg:#dfdfdf"
+format = "[$all_status$ahead_behind ]($style)"
+
+[golang]
+symbol = " "
+style = "bg:#525252 fg:#dfdfdf"
+format = "[ $symbol ($version) ]($style)"
+
+[haskell]
+symbol = " "
+style = "bg:#525252 fg:#dfdfdf"
+format = "[ $symbol ($version) ]($style)"
+
+[java]
+symbol = " "
+style = "bg:#525252 fg:#dfdfdf"
+format = "[ $symbol ($version) ]($style)"
+
+[julia]
+symbol = " "
+style = "bg:#525252 fg:#dfdfdf"
+format = "[ $symbol ($version) ]($style)"
+
+[nodejs]
+symbol = ""
+style = "bg:#525252 fg:#dfdfdf"
+format = "[ $symbol ($version) ]($style)"
+
+[nim]
+symbol = " "
+style = "bg:#525252 fg:#dfdfdf"
+format = "[ $symbol ($version) ]($style)"
+
+[python]
+style = "bg:#2c2c2c fg:#dfdfdf"
+format = "[(/($virtualenv/) )]($style)"
+
+[rust]
+symbol = ""
+style = "bg:#525252 fg:#dfdfdf"
+format = "[ $symbol ($version) ]($style)"
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#2c2c2c fg:#dfdfdf"
+format = "[ $time ]($style)"
